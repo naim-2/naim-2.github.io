@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -86,6 +86,7 @@ nav ul li a {
 
 section {
     padding: 20px;
+    margin-top: 100px;
 }
 
 .project {
@@ -194,7 +195,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 2000;
 }
 
 footer p {
@@ -203,4 +204,4 @@ footer p {
 
 .achievement-item p {
     font-size: 1em;
-}
+} */
