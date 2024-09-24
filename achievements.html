@@ -4,40 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certifications & Achievements - Naim</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="achievements.html">Certifications & Achievements</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+<body class="d-flex flex-column min-vh-100">
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="50px" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item ml-2"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item ml-2"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <!-- <li class="nav-item ml-2"><a class="nav-link active" href="experience.html">Experience</a></li> -->
+                    <li class="nav-item ml-2"><a class="nav-link active" href="skills.html">Skills</a></li>
+                    <li class="nav-item ml-2"><a class="nav-link disabled" href="achievements.html">Certifications & Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section id="achievements">
-        <h2>Certifications & Achievements</h2>
-        <div class="achievement-item">
-            <h3>Certification Title 1</h3>
-            <p>Issuing Organization - Date</p>
-            <p>Description of certification...</p>
-        </div>
-        <div class="achievement-item">
-            <h3>Award Title 1</h3>
-            <p>Issuing Organization - Date</p>
-            <p>Description of award...</p>
-        </div>
-    </section>
+<section id="achievements" class="container my-5">
+    <h2 class="mb-4 text-center">Certifications & Achievements</h2>
+    <div class="achievement-item mb-4">
+        <h3>Certification Title 1</h3>
+        <p><strong>Issuing Organization</strong> - Date</p>
+        <p>Description of certification...</p>
+    </div>
+    <div class="achievement-item mb-4">
+        <h3>Award Title 1</h3>
+        <p><strong>Issuing Organization</strong> - Date</p>
+        <p>Description of award...</p>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Naim. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+<footer class="bg-light py-3 text-center mt-auto">
+    <p class="mb-0">&copy; 2024 Naim. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
