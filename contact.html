@@ -4,45 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Naim</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="achievements.html">Certifications & Achievements</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+<header class="bg-light py-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="50px" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item ml-2"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item ml-2"><a class="nav-link active" href="projects.html">Projects</a></li>
+                <!-- <li class="nav-item ml-2"><a class="nav-link active" href="experience.html">Experience</a></li> -->
+                <li class="nav-item ml-2"><a class="nav-link active" href="skills.html">Skills</a></li>
+                <li class="nav-item ml-2"><a class="nav-link active" href="achievements.html">Certifications & Achievements</a></li>
+                <li class="nav-item"><a class="nav-link disabled" href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me through any of the following methods:</p>
-        <ul>
-            <li><strong>GitHub:</strong> <a href="https://github.com/naim-2" target="_blank">github.com/naim-2</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/naim-salim" target="_blank">linkedin.com/in/naim-salim</a></li>
-        </ul>
-        <p>Or you can send an email here:</p>
-        <form action="mailto:abdulhakimnaim@gmail.com" method="post" enctype="text/plain">
+<section id="contact" class="container my-5">
+    <h2 class="mb-4">Contact Me</h2>
+    <p>Feel free to reach out to me through any of the following methods:</p>
+    <ul class="list-unstyled">
+        <li><strong>GitHub:</strong> <a href="https://github.com/naim-2" target="_blank">github.com/naim-2</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/naim-salim" target="_blank">linkedin.com/in/naim-salim</a></li>
+    </ul>
+    <p>Or you can send an email here:</p>
+    
+    <form action="mailto:abdulhakimnaim@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+            <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Naim. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+<footer class="bg-light py-3 text-center">
+    <p>&copy; 2024 Naim. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
