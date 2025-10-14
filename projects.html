@@ -32,7 +32,99 @@
 
     <main class="flex-grow-1">
         <section id="projects" class="container my-2">
-            <h2 class="text-center mb-4">Projects</h2>
+            <h2 class="text-center mb-4">Major Projects</h2>
+            <div class="row">
+                <!-- NAVI – Vision Restored Project -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">NAVI - Vision Restored</h3>
+                            <p class="card-text">
+                                <strong>Overview:</strong> NAVI is an AI-powered wearable and mobile solution created for the Microsoft Imagine Cup & Datathon 2024. It empowers blind and visually impaired individuals in Kenya through real-time object recognition, scene narration, and natural language interaction using Microsoft Azure Cognitive Services.
+                            </p>
+
+                            <p><strong>Competition Status:</strong> Successfully passed Stage 1 of the Microsoft Imagine Cup 2024, but did not proceed past Stage 2.</p>
+
+                            <!-- Optional Demo Modal -->
+                            <button type="button" class="btn btn-primary mt-1 mb-4" data-bs-toggle="modal" data-bs-target="#naviModal">
+                                Watch Demo Video
+                            </button>
+
+                            <div class="modal fade" id="naviModal" tabindex="-1" aria-labelledby="naviModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="naviModalLabel">NAVI - Vision Restored</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <video class="w-100" style="height: 400px" controls>
+                                                <source src="./assets/videos/navi.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accordion for Project Details -->
+                            <div class="accordion" id="naviAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFeaturesNAVI">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFeaturesNAVI" aria-expanded="true" aria-controls="collapseFeaturesNAVI">
+                                            Project Features
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFeaturesNAVI" class="accordion-collapse collapse show" aria-labelledby="headingFeaturesNAVI" data-bs-parent="#naviAccordion">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><strong>Real-Time Object Recognition:</strong> Uses Azure AI Vision for detecting everyday items in the user's environment.</li>
+                                                <li><strong>Scene Understanding:</strong> Narrates full scenes using Computer Vision APIs for spatial awareness.</li>
+                                                <li><strong>Text-to-Speech:</strong> Reads signs, books, and objects aloud with natural voice options.</li>
+                                                <li><strong>Speech-to-Text:</strong> Converts user voice commands into text for system interaction.</li>
+                                                <li><strong>Natural Language Understanding:</strong> Enables voice-controlled navigation and interaction.</li>
+                                                <li><strong>Support for 10 of the most spoken African languages, including Swahili and English:</strong> Provides localization using custom datasets tailored for African users.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTechNAVI">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechNAVI" aria-expanded="false" aria-controls="collapseTechNAVI">
+                                            Tech Stack
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTechNAVI" class="accordion-collapse collapse" aria-labelledby="headingTechNAVI" data-bs-parent="#naviAccordion">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><strong>Frontend:</strong> Android Java, XML</li>
+                                                <li><strong>Cloud & AI:</strong> Microsoft Azure AI Vision, Speech Services, Natural Language Processing</li>
+                                                <li><strong>Backend:</strong> Web API integration</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingImpactNAVI">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseImpactNAVI" aria-expanded="false" aria-controls="collapseImpactNAVI">
+                                            Social Impact
+                                        </button>
+                                    </h2>
+                                    <div id="collapseImpactNAVI" class="accordion-collapse collapse" aria-labelledby="headingImpactNAVI" data-bs-parent="#naviAccordion">
+                                        <div class="accordion-body">
+                                            Created to empower over 800,000 visually impaired individuals aged 15-35 in Kenya. Designed in collaboration with blind students at USIU-Africa. Recognized at Microsoft Imagine Cup & Datathon 2024 for innovation in accessibility.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-center mb-4">Minor Projects</h2>
             <div class="row">
                 <!-- Sentiment Analysis Web App -->
                 <div class="col-md-6 mb-4">
