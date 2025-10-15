@@ -38,10 +38,14 @@
             <!-- Tabs for Text and Images -->
             <ul class="nav nav-tabs" id="skillTabs" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="text-tab" data-toggle="tab" href="#text" role="tab" aria-controls="text" aria-selected="true">Textual</a>
+                    <a class="nav-link active" id="text-tab" data-toggle="tab" href="#text" role="tab" aria-controls="text" aria-selected="true">
+                        <i class="fas fa-align-left mr-1"></i>Textual
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="image-tab" data-toggle="tab" href="#image" role="tab" aria-controls="image" aria-selected="false">Visual</a>
+                    <a class="nav-link" id="image-tab" data-toggle="tab" href="#image" role="tab" aria-controls="image" aria-selected="false">
+                        <i class="fas fa-images mr-1"></i>Visual
+                    </a>
                 </li>
             </ul>
 
@@ -49,63 +53,36 @@
                 <!-- Text Only Tab -->
                 <div class="tab-pane fade show active" id="text" role="tabpanel" aria-labelledby="text-tab">
                     <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card d-flex flex-column h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Project Management</h5>
-                                    <ul>
-                                        <li>Agile Project Management</li>
-                                        <li>Project Documentation</li>
-                                        <li>Requirements Analysis</li>
-                                        <li>Stakeholder Management</li>
-                                        <li>Change Management</li>
-                                        <li>Risk Management</li>
-                                        <li>Strategic Communications</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4 mb-4">
-                            <div class="card d-flex flex-column h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Design</h5>
-                                    <ul>
-                                        <li>UI/UX design (Figma & Canva)</li>
-                                        <li>Responsive web design</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
+                        <!-- Programming: Frontend -->
                         <div class="col-md-4 mb-4">
                             <div class="card d-flex flex-column h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Frontend</h5>
                                     <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                        <li>React</li>
-                                        <li>Vue.js</li>
-                                        <li>Bootstrap</li>
-                                        <li>Tailwind CSS</li>
+                                        <li>HTML <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>CSS <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>JavaScript <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>React <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Vue.js <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Bootstrap <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Tailwind CSS <span class="badge badge-success skill-badge">Advanced</span></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Programming: Backend -->
                         <div class="col-md-4 mb-4">
                             <div class="card d-flex flex-column h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Backend</h5>
                                     <ul>
-                                        <li>Node.js</li>
-                                        <li>Express</li>
-                                        <li>Flask</li>
+                                        <li>Node.js <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Express <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Flask <span class="badge badge-success skill-badge">Advanced</span></li>
                                         <!-- <li>Django</li> -->
-                                        <li>REST APIs</li>
-                                        <li>Postman</li>
+                                        <li>REST APIs <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Postman <span class="badge badge-success skill-badge">Advanced</span></li>
                                         <!-- <li>Session & JWT authentication</li>
                                         <li>Microservices</li>
                                         <li>Serverless computing</li> -->
@@ -114,29 +91,113 @@
                             </div>
                         </div>
 
+                        <!-- AI & Data Science -->
                         <div class="col-md-4 mb-4">
                             <div class="card d-flex flex-column h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Mobile</h5>
+                                    <h5 class="card-title">AI & Data Science</h5>
                                     <ul>
-                                        <li>Android Java</li>
-                                        <li>XML</li>
-                                        <li>React Native</li>
+                                        <li>Python <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Data Analysis (Pandas, NumPy) <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Machine Learning (scikit-learn) <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                        <li>Deep Learning (CNN, RNN, LSTM) <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                        <li>Azure Cognitive Services <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                        <li>Power BI <span class="badge badge-info skill-badge">Beginner</span></li>
+                                        <li>Chatbot Design & Development <span class="badge badge-info skill-badge">Beginner</span></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Cloud & DevOps -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card d-flex flex-column h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloud & DevOps</h5>
+                                    <ul>
+                                        <li>Microsoft Azure <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                        <li>CI/CD Pipelines <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                        <li>Oracle Cloud Infrastructure (OCI) <span class="badge badge-info skill-badge">Beginner</span></li>
+                                        <li>Containerization (Docker, Kubernetes) <span class="badge badge-info skill-badge">Beginner</span></li>
+                                        <li>Microservices Architecture <span class="badge badge-info skill-badge">Beginner</span></li>
+                                        <li>Serverless Functions <span class="badge badge-info skill-badge">Beginner</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Database -->
                         <div class="col-md-4 mb-4">
                             <div class="card d-flex flex-column h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Database</h5>
                                     <ul>
-                                        <li>SQL</li>
-                                        <li>SQLite</li>
-                                        <li>NoSQL</li>
-                                        <li>Firebase</li>
-                                        <li>MongoDB</li>
+                                        <li>SQL <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>SQLite <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>NoSQL <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Firebase <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>MongoDB <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card d-flex flex-column h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mobile</h5>
+                                    <ul>
+                                        <li>Android Java <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>XML <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>React Native <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                        <li>Flutter <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Management -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card d-flex flex-column h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project Management</h5>
+                                    <ul>
+                                        <li>Agile Project Management <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                        <li>Project Documentation <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                        <li>Requirements Analysis <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                        <li>Strategic Communications <span class="badge badge-warning skill-badge">Intermediate</span></li>
+                                        <li>Stakeholder Management <span class="badge badge-info skill-badge">Beginner</span></li>
+                                        <li>Change Management <span class="badge badge-info skill-badge">Beginner</span></li>
+                                        <li>Risk Management <span class="badge badge-info skill-badge">Beginner</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Version Control -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card d-flex flex-column h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Version Control</h5>
+                                    <ul>
+                                        <li>Git <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>GitHub <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>GitHub Actions <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Render <span class="badge badge-success skill-badge">Advanced</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Design -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card d-flex flex-column h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Design</h5>
+                                    <ul>
+                                        <li>UI/UX design (Figma & Canva) <span class="badge badge-success skill-badge">Advanced</span></li>
+                                        <li>Responsive web design <span class="badge badge-success skill-badge">Advanced</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -173,33 +234,6 @@
                             </div>
                         </div> -->
 
-                        <div class="col-md-4 mb-4">
-                            <div class="card d-flex flex-column h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Version Control</h5>
-                                    <ul>
-                                        <li>Git</li>
-                                        <li>GitHub</li>
-                                        <li>GitHub Actions</li>
-                                        <li>Render</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <div class="card d-flex flex-column h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">AI</h5>
-                                    <ul>
-                                        <li>Python</li>
-                                        <li>Azure Cognitive Services</li>
-                                        <li>Chatbot Design & Development</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- <div class="col-md-4 mb-4">
                             <div class="card d-flex flex-column h-100">
                                 <div class="card-body">
@@ -218,36 +252,6 @@
                 <!-- Images Only Tab -->
                 <div class="tab-pane fade" id="image" role="tabpanel" aria-labelledby="image-tab">
                     <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card d-flex flex-column h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Project Management</h5>
-                                    <div class="d-flex flex-wrap gap-10">
-                                        <i class="fas fa-rocket fa-3x text-primary mr-4"></i>
-                                        <i class="fas fa-file-alt fa-3x text-secondary mr-4"></i>
-                                        <i class="fas fa-clipboard-list fa-3x text-success mr-4"></i>
-                                        <i class="fas fa-handshake fa-3x text-info mr-4"></i>
-                                        <i class="fas fa-sync-alt fa-3x text-warning mr-4"></i>
-                                        <i class="fas fa-exclamation-triangle fa-3x text-danger mr-4"></i>
-                                        <i class="fas fa-bullhorn fa-3x text-dark mr-4"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <div class="card d-flex flex-column h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Design</h5>
-                                    <div class="d-flex flex-wrap">
-                                        <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"/>
-                                        <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"/>
-                                        <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Responsive_Web_Design_Logo.svg/1024px-Responsive_Web_Design_Logo.svg.png" alt="Responsiveness"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="col-md-4 mb-4">
                             <div class="card d-flex flex-column h-100">
                                 <div class="card-body">
@@ -284,12 +288,28 @@
                         <div class="col-md-4 mb-4">
                             <div class="card d-flex flex-column h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Mobile</h5>
+                                    <h5 class="card-title">AI & Data Science</h5>
                                     <div class="d-flex flex-wrap">
-                                        <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android">
-                                        <img height="50" class="mr-2" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Extensible_Markup_Language_%28XML%29_logo.svg" alt="XML">
-                                        <!-- <img height="50" src="assets/images/flutter-svgrepo-com.svg" alt="Flutter"> -->
-                                        <img height="50" src="assets/images/react-native.svg" alt="React Native">
+                                        <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                        <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Azure">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cloud & DevOps -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card d-flex flex-column h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloud & DevOps</h5>
+                                    <div class="d-flex flex-wrap">
+                                        <!-- <img height="50" class="mr-2" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Oracle_Cloud_Logo.svg" alt="Oracle Cloud Infrastructure" style="height:50px;" /> -->
+                                        <img height="50" class="mr-2" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Microsoft Azure" />
+                                        <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                                        <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" alt="Kubernetes" />
+                                        <!-- <img height="50" class="mr-2" src="https://cdn-icons-png.flaticon.com/512/3212/3212126.png" alt="CI/CD Pipelines" style="height:50px;" title="CI/CD (generic icon)" /> -->
+                                        <!-- <img height="50" class="mr-2" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Microservices-Architecture-Icon.png" alt="Microservices" style="height:50px;" /> -->
+                                        <img height="50" src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Serverless" style="height:50px;" title="Serverless Functions" />
                                     </div>
                                 </div>
                             </div>
@@ -304,6 +324,37 @@
                                         <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite"/>
                                         <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"/>
                                         <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card d-flex flex-column h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mobile</h5>
+                                    <div class="d-flex flex-wrap">
+                                        <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android">
+                                        <img height="50" class="mr-2" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Extensible_Markup_Language_%28XML%29_logo.svg" alt="XML">
+                                        <img height="50" src="assets/images/react-native.svg" alt="React Native">
+                                        <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card d-flex flex-column h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project Management</h5>
+                                    <div class="d-flex flex-wrap gap-10">
+                                        <i class="fas fa-rocket fa-3x text-primary mr-4"></i>
+                                        <i class="fas fa-file-alt fa-3x text-secondary mr-4"></i>
+                                        <i class="fas fa-clipboard-list fa-3x text-success mr-4"></i>
+                                        <i class="fas fa-handshake fa-3x text-info mr-4"></i>
+                                        <i class="fas fa-sync-alt fa-3x text-warning mr-4"></i>
+                                        <i class="fas fa-exclamation-triangle fa-3x text-danger mr-4"></i>
+                                        <i class="fas fa-bullhorn fa-3x text-dark mr-4"></i>
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +391,7 @@
                                     <div class="d-flex flex-wrap">
                                         <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>
                                         <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
-                                        <img height="50" src="https://global.discourse-cdn.com/business6/uploads/render/original/2X/1/11352202c8503f736bea5efb59684f678d7c860c.svg" alt="Render">
+                                        <!-- <img height="50" src="https://global.discourse-cdn.com/business6/uploads/render/original/2X/1/11352202c8503f736bea5efb59684f678d7c860c.svg" alt="Render"> -->
                                     </div>
                                 </div>
                             </div>
@@ -349,10 +400,11 @@
                         <div class="col-md-4 mb-4">
                             <div class="card d-flex flex-column h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">AI</h5>
+                                    <h5 class="card-title">Design</h5>
                                     <div class="d-flex flex-wrap">
-                                        <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                                        <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Azure">
+                                        <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"/>
+                                        <img height="50" class="mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"/>
+                                        <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Responsive_Web_Design_Logo.svg/1024px-Responsive_Web_Design_Logo.svg.png" alt="Responsiveness"/>
                                     </div>
                                 </div>
                             </div>
