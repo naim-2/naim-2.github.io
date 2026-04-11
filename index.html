@@ -1,52 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Naim</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naim Salim — Full Stack & Mobile Developer</title>
+  <meta name="description" content="Portfolio of Naim Salim — Full Stack Developer, Mobile Engineer, AI Practitioner. Magna Cum Laude graduate, IBM & Oracle Certified.">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <header class="bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="50px" height="50px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item mr-2"><a class="nav-link disabled" href="index.html">Home</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="academics.html">Academics</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="experience.html">Experience</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="projects.html">Projects</a></li>
-                    <!-- <li class="nav-item mr-2"><a class="nav-link active" href="experience.html">Experience</a></li> -->
-                    <li class="nav-item mr-2"><a class="nav-link active" href="data_science_and_ai.html">Data Science & AI</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="skills.html">Skills</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="certifications.html">Certifications</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="courses.html">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+<body>
 
-        <div class="hero d-flex align-items-center justify-content-center" style="height: 80vh; background: url('assets/images/tech.jpg') no-repeat center center; background-size: cover;">
-            <div class="text-center text-white">
-                <h1>Hi, I'm Naim</h1>
-                <p>IBM Certified Full Stack Software Developer  |  OCI 2025 Certified Generative AI Professional</p>
-                <a href="contact.html" class="btn btn-primary">Contact Me</a>
-            </div>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo">
+      <span class="logo-dot"></span>Naim Salim
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="data_science_and_ai.html">Data Science & AI</a>
+      <a href="skills.html">Skills</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-drawer">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="academics.html">Academics</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="data_science_and_ai.html">Data Science & AI</a>
+    <a href="skills.html">Skills</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="page-wrapper">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">Nairobi, Kenya · Open to Opportunities</div>
+        <h1 class="hero-name">Hi, I'm <span>Naim</span></h1>
+        <p class="hero-subtitle">
+          <span class="hero-typewriter"></span><span class="hero-cursor"></span>
+        </p>
+
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-gold">View My Work</a>
+          <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+          <a href="assets/pdfs/cv.pdf" class="btn btn-ghost" target="_blank">Download CV</a>
         </div>
-    </header>
 
-    <main class="flex-grow-1"></main>
+        <div class="hero-stats">
+          <div>
+            <span class="hero-stat-number" data-count="7" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Certifications</span>
+          </div>
+          <div>
+            <span class="hero-stat-number" data-count="4" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Companies</span>
+          </div>
+          <div>
+            <span class="hero-stat-number" data-count="8" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Major Projects</span>
+          </div>
+          <div>
+            <span class="hero-stat-number" data-count="3" data-suffix="×">0×</span>
+            <span class="hero-stat-label">Chess Leagues</span>
+          </div>
+        </div>
+      </div>
 
-    <footer class="text-center py-4 bg-light mt-auto">
-        <p>&copy; 2025 Naim. All rights reserved.</p>
-    </footer>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Quick intro strip -->
+    <section style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 2.5rem 2rem;">
+      <div style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:2rem; text-align:center;">
+        <div class="reveal">
+          <div style="font-size:1.5rem; margin-bottom:.5rem;">🎓</div>
+          <div style="font-size:.82rem; font-weight:600; color:var(--gold); letter-spacing:.1em; text-transform:uppercase;">Magna Cum Laude</div>
+          <div style="font-size:.82rem; color:var(--text-muted); margin-top:.25rem;">BSc Applied Computer Technology · USIU-Africa</div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div style="font-size:1.5rem; margin-bottom:.5rem;">🏆</div>
+          <div style="font-size:.82rem; font-weight:600; color:var(--gold); letter-spacing:.1em; text-transform:uppercase;">IBM & Oracle Certified</div>
+          <div style="font-size:.82rem; color:var(--text-muted); margin-top:.25rem;">Full Stack · Gen AI · Data Science Professional</div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div style="font-size:1.5rem; margin-bottom:.5rem;">📱</div>
+          <div style="font-size:.82rem; font-weight:600; color:var(--gold); letter-spacing:.1em; text-transform:uppercase;">Flutter & Firebase</div>
+          <div style="font-size:.82rem; color:var(--text-muted); margin-top:.25rem;">M-Pesa · Cloudflare Workers · Serverless</div>
+        </div>
+        <div class="reveal reveal-delay-3">
+          <div style="font-size:1.5rem; margin-bottom:.5rem;">♟</div>
+          <div style="font-size:.82rem; font-weight:600; color:var(--gold); letter-spacing:.1em; text-transform:uppercase;">Competitive Chess</div>
+          <div style="font-size:.82rem; color:var(--text-muted); margin-top:.25rem;">AYCC Namibia 2019 · Kenya Premier League</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="section-container">
+      <div class="section-header reveal">
+        <span class="section-label">Featured Work</span>
+        <h2 class="section-title">Selected <em>Projects</em></h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="card project-card reveal" onclick="window.location='projects.html'">
+          <div class="project-card-top">
+            <span class="project-type">AI · Mobile</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">NAVI — Vision Restored</h3>
+          <p class="project-desc">AI-powered wearable solution for the blind using Azure Cognitive Services. Real-time object recognition, scene narration, and 10-language NLP support. Passed Stage 1 of Microsoft Imagine Cup 2024.</p>
+          <div class="project-tags">
+            <span class="project-tag">Android Java</span>
+            <span class="project-tag">Azure AI Vision</span>
+            <span class="project-tag">Speech Services</span>
+            <span class="project-tag">NLP</span>
+          </div>
+        </div>
+
+        <div class="card project-card reveal reveal-delay-1" onclick="window.location='projects.html'">
+          <div class="project-card-top">
+            <span class="project-type">Flutter · Backend</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">LUMEA Booking System</h3>
+          <p class="project-desc">End-to-end booking and M-Pesa payment platform built with Flutter and Cloudflare Workers. Secure Firebase Auth, Firestore, and serverless cloud architecture.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Cloudflare Workers</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">M-Pesa</span>
+          </div>
+        </div>
+
+        <div class="card project-card reveal reveal-delay-2" onclick="window.location='projects.html'">
+          <div class="project-card-top">
+            <span class="project-type">AI · Web</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Sentiment Analysis App</h3>
+          <p class="project-desc">Real-time NLP web app classifying text as positive, negative, or neutral. Flask backend with TextBlob engine, rate limiting, and live statistics dashboard.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Flask</span>
+            <span class="project-tag">TextBlob</span>
+            <span class="project-tag">NLP</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;" class="reveal">
+        <a href="projects.html" class="btn btn-outline">View All Projects</a>
+      </div>
+    </section>
+
+    <!-- Skills Highlights -->
+    <section style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle);">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-label">Expertise</span>
+          <h2 class="section-title">What I <em>Build With</em></h2>
+          <div class="section-rule"></div>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:.6rem; justify-content:center;" class="reveal">
+          <span class="interest-chip">Flutter</span><span class="interest-chip">Firebase</span>
+          <span class="interest-chip">React</span><span class="interest-chip">Vue.js</span>
+          <span class="interest-chip">Python</span><span class="interest-chip">Node.js</span>
+          <span class="interest-chip">Flask</span><span class="interest-chip">Cloudflare Workers</span>
+          <span class="interest-chip">Oracle OCI</span><span class="interest-chip">Azure AI</span>
+          <span class="interest-chip">Machine Learning</span><span class="interest-chip">LangChain</span>
+          <span class="interest-chip">Power BI</span><span class="interest-chip">Docker</span>
+          <span class="interest-chip">GitHub Actions</span><span class="interest-chip">M-Pesa API</span>
+          <span class="interest-chip">Android Java</span><span class="interest-chip">React Native</span>
+          <span class="interest-chip">MongoDB</span><span class="interest-chip">PostgreSQL</span>
+        </div>
+        <div style="text-align:center; margin-top:2.5rem;" class="reveal">
+          <a href="skills.html" class="btn btn-outline">Full Skills Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-container" style="text-align:center;">
+      <div class="reveal">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title" style="margin-bottom:1.5rem;">Ready to <em>Work Together?</em></h2>
+        <p style="color:var(--text-secondary); max-width:480px; margin:0 auto 2rem; font-size:.95rem; line-height:1.8;">
+          I'm actively looking for opportunities in software development, mobile engineering, and AI. Let's build something remarkable.
+        </p>
+        <a href="contact.html" class="btn btn-gold">Start a Conversation</a>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2026 Naim Salim. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

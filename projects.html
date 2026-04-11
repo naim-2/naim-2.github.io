@@ -1,444 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Naim</title> 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Naim Salim</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <header class="bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" width="50" height="50" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item mr-2"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="academics.html">Academics</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="experience.html">Experience</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link disabled" href="projects.html">Projects</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="data_science_and_ai.html">Data Science & AI</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="skills.html">Skills</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="certifications.html">Certifications</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link active" href="courses.html">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<body>
 
-    <main class="flex-grow-1">
-        <section id="projects" class="container my-2">
-            <h2 class="text-center mb-4">Major Projects</h2>
-            <div class="row">
-                <!-- NAVI – Vision Restored Project -->
-                <div class="col-md-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h3 class="card-title">NAVI - Vision Restored</h3>
-                            <p class="card-text">
-                                <strong>Overview:</strong> NAVI is an AI-powered wearable and mobile solution created for the Microsoft Imagine Cup & Datathon 2024. It empowers blind and visually impaired individuals in Kenya through real-time object recognition, scene narration, and natural language interaction using Microsoft Azure Cognitive Services.
-                            </p>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo"><span class="logo-dot"></span>Naim Salim</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="about.html">About</a>
+      <a href="academics.html">Academics</a><a href="experience.html">Experience</a>
+      <a href="projects.html" class="active">Projects</a><a href="data_science_and_ai.html">Data Science & AI</a>
+      <a href="skills.html">Skills</a><a href="certifications.html">Certifications</a>
+      <a href="courses.html">Courses</a><a href="contact.html">Contact</a>
+    </div>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="nav-drawer">
+    <a href="index.html">Home</a><a href="about.html">About</a>
+    <a href="academics.html">Academics</a><a href="experience.html">Experience</a>
+    <a href="projects.html" class="active">Projects</a><a href="data_science_and_ai.html">Data Science & AI</a>
+    <a href="skills.html">Skills</a><a href="certifications.html">Certifications</a>
+    <a href="courses.html">Courses</a><a href="contact.html">Contact</a>
+  </div>
 
-                            <p><strong>Competition Status:</strong> Successfully passed Stage 1 of the Microsoft Imagine Cup 2024, but did not proceed past Stage 2.</p>
+  <div class="page-wrapper">
+    <div class="page-hero">
+      <div class="page-hero-label">What I've Built</div>
+      <h1 class="page-hero-title">Selected <em>Projects</em></h1>
+    </div>
 
-                            <!-- Optional Demo Modal -->
-                            <button type="button" class="btn btn-primary mt-1 mb-4" data-bs-toggle="modal" data-bs-target="#naviModal">
-                                Watch Demo Video
-                            </button>
+    <div class="section-container">
 
-                            <div class="modal fade" id="naviModal" tabindex="-1" aria-labelledby="naviModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="naviModalLabel">NAVI - Vision Restored</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <video class="w-100" style="height: 400px" controls>
-                                                <source src="./assets/videos/navi.mp4" type="video/mp4">
-                                                Your browser does not support the video tag.
-                                            </video>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+      <!-- MAJOR -->
+      <div class="section-header reveal">
+        <span class="section-label">Major Projects</span>
+        <h2 class="section-title" style="font-size:2rem;">Flagship <em>Work</em></h2>
+        <div class="section-rule"></div>
+      </div>
 
-                            <!-- Accordion for Project Details -->
-                            <div class="accordion" id="naviAccordion">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFeaturesNAVI">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFeaturesNAVI" aria-expanded="true" aria-controls="collapseFeaturesNAVI">
-                                            Project Features
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFeaturesNAVI" class="accordion-collapse collapse show" aria-labelledby="headingFeaturesNAVI" data-bs-parent="#naviAccordion">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li><strong>Real-Time Object Recognition:</strong> Uses Azure AI Vision for detecting everyday items in the user's environment.</li>
-                                                <li><strong>Scene Understanding:</strong> Narrates full scenes using Computer Vision APIs for spatial awareness.</li>
-                                                <li><strong>Text-to-Speech:</strong> Reads signs, books, and objects aloud with natural voice options.</li>
-                                                <li><strong>Speech-to-Text:</strong> Converts user voice commands into text for system interaction.</li>
-                                                <li><strong>Natural Language Understanding:</strong> Enables voice-controlled navigation and interaction.</li>
-                                                <li><strong>Support for 10 of the most spoken African languages, including Swahili and English:</strong> Provides localization using custom datasets tailored for African users.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+      <div class="projects-grid" style="margin-bottom:4rem;">
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTechNAVI">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechNAVI" aria-expanded="false" aria-controls="collapseTechNAVI">
-                                            Tech Stack
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTechNAVI" class="accordion-collapse collapse" aria-labelledby="headingTechNAVI" data-bs-parent="#naviAccordion">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li><strong>Frontend:</strong> Android Java, XML</li>
-                                                <li><strong>Cloud & AI:</strong> Microsoft Azure AI Vision, Speech Services, Natural Language Processing</li>
-                                                <li><strong>Backend:</strong> Web API integration</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+        <!-- NAVI -->
+        <div class="card project-card reveal" data-modal="modal-navi">
+          <div class="project-card-top">
+            <span class="project-type">AI · Mobile · Accessibility</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">NAVI — Vision Restored</h3>
+          <p class="project-desc">AI-powered wearable and mobile solution empowering blind and visually impaired individuals in Kenya. Real-time object recognition, scene narration, and 10-language NLP — built for Microsoft Imagine Cup 2024.</p>
+          <div style="margin-bottom:1rem;">
+            <span style="font-size:.75rem; color:#34d399; background:rgba(16,185,129,.1); padding:.2rem .7rem; border-radius:100px; font-weight:600;">✓ Passed Microsoft Imagine Cup Stage 1</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Android Java</span><span class="project-tag">Azure AI Vision</span>
+            <span class="project-tag">Speech Services</span><span class="project-tag">NLP</span><span class="project-tag">XML</span>
+          </div>
+        </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingImpactNAVI">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseImpactNAVI" aria-expanded="false" aria-controls="collapseImpactNAVI">
-                                            Social Impact
-                                        </button>
-                                    </h2>
-                                    <div id="collapseImpactNAVI" class="accordion-collapse collapse" aria-labelledby="headingImpactNAVI" data-bs-parent="#naviAccordion">
-                                        <div class="accordion-body">
-                                            Created to empower over 800,000 visually impaired individuals aged 15-35 in Kenya. Designed in collaboration with blind students at USIU-Africa. Recognized at Microsoft Imagine Cup & Datathon 2024 for innovation in accessibility.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- LUMEA -->
+        <div class="card project-card reveal reveal-delay-1" data-modal="modal-lumea">
+          <div class="project-card-top">
+            <span class="project-type">Flutter · Backend · Fintech</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">LUMEA Booking System</h3>
+          <p class="project-desc">End-to-end booking and M-Pesa payment platform. Flutter mobile UI + Cloudflare Workers APIs + Firebase Auth and Firestore security rules — full production architecture.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span><span class="project-tag">Dart</span>
+            <span class="project-tag">Cloudflare Workers</span><span class="project-tag">Firebase</span>
+            <span class="project-tag">M-Pesa API</span>
+          </div>
+        </div>
 
-                <!-- USIU-Africa AI Map System Project -->
-                <div class="col-md-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h3 class="card-title">USIU-Africa AI Map System</h3>
-                            <p class="card-text">
-                                <strong>Overview:</strong> An AI-powered interactive campus map created for USIU-Africa to assist students, visitors, and staff with on-campus navigation. It leverages AI algorithms to generate a digital representation of the campus and deliver accurate routing, building identification, and accessibility information.
-                            </p>
-                            <p><strong>Status:</strong> Plans are underway to implement it for actual use within the university.</p>
+        <!-- USIU MAP -->
+        <div class="card project-card reveal reveal-delay-2" data-modal="modal-usiu">
+          <div class="project-card-top">
+            <span class="project-type">AI · Navigation · Android</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">USIU-Africa AI Map System</h3>
+          <p class="project-desc">AI-powered interactive campus map for USIU-Africa. Real-time navigation, accessibility routing for wheelchair users and the visually impaired, and a searchable campus directory.</p>
+          <div style="margin-bottom:1rem;">
+            <span style="font-size:.75rem; color:#fbbf24; background:rgba(245,158,11,.1); padding:.2rem .7rem; border-radius:100px; font-weight:600;">📌 Planned for university implementation</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Android Java</span><span class="project-tag">SQLite</span>
+            <span class="project-tag">Firebase</span><span class="project-tag">AI Routing</span>
+          </div>
+        </div>
+      </div>
 
-                            <!-- Optional Demo Modal -->
-                            <!-- Uncomment if a video is available
-                            <button type="button" class="btn btn-primary mt-1 mb-4" data-bs-toggle="modal" data-bs-target="#usiuMapModal">
-                                Watch Demo Video
-                            </button>
+      <!-- MINOR -->
+      <div class="section-header reveal">
+        <span class="section-label">Minor Projects</span>
+        <h2 class="section-title" style="font-size:2rem;">Additional <em>Work</em></h2>
+        <div class="section-rule"></div>
+      </div>
 
-                            <div class="modal fade" id="usiuMapModal" tabindex="-1" aria-labelledby="usiuMapModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="usiuMapModalLabel">USIU-Africa AI Map System</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <video class="w-100" style="height: 400px" controls>
-                                                <source src="./assets/videos/usiu_map.mp4" type="video/mp4">
-                                                Your browser does not support the video tag.
-                                            </video>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            -->
+      <div class="projects-grid">
 
-                            <!-- Accordion for Project Details -->
-                            <div class="accordion" id="usiuMapAccordion">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFeaturesUSIU">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFeaturesUSIU" aria-expanded="true" aria-controls="collapseFeaturesUSIU">
-                                            Project Features
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFeaturesUSIU" class="accordion-collapse collapse show" aria-labelledby="headingFeaturesUSIU" data-bs-parent="#usiuMapAccordion">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li><strong>Interactive Campus Map:</strong> Displays real-time locations of buildings, walkways, and key landmarks.</li>
-                                                <li><strong>Accessibility Routing:</strong> Offers optimized paths for wheelchair users and visually impaired individuals.</li>
-                                                <li><strong>Searchable Directory:</strong> Enables users to locate departments, services, and events.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+        <!-- Sentiment Analysis -->
+        <div class="card project-card reveal" data-modal="modal-sentiment">
+          <div class="project-card-top">
+            <span class="project-type">NLP · Web App</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Sentiment Analysis App</h3>
+          <p class="project-desc">Real-time text sentiment classifier — positive, negative, or neutral. Statistics dashboard, rate limiting, and live NLP feedback powered by Flask + TextBlob.</p>
+          <div style="margin-bottom:1rem;">
+            <a href="https://sentiment-analyzer-swle.onrender.com/" target="_blank"
+               class="btn btn-outline" style="font-size:.75rem; padding:.35rem .9rem;" onclick="event.stopPropagation()">
+              🌐 Live Demo
+            </a>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span><span class="project-tag">Flask</span>
+            <span class="project-tag">TextBlob</span><span class="project-tag">NLP</span>
+          </div>
+        </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTechUSIU">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechUSIU" aria-expanded="false" aria-controls="collapseTechUSIU">
-                                            Tech Stack
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTechUSIU" class="accordion-collapse collapse" aria-labelledby="headingTechUSIU" data-bs-parent="#usiuMapAccordion">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li><strong>Frontend:</strong> Android Java, XML</li>
-                                                <li><strong>Backend:</strong> Android Java</li>
-                                                <li><strong>Database:</strong> SQLite, Firebase</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- Journal App -->
+        <div class="card project-card reveal reveal-delay-1" data-modal="modal-journal">
+          <div class="project-card-top">
+            <span class="project-type">Mobile · React Native</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Personal Journaling App</h3>
+          <p class="project-desc">Mobile journaling app with secure JWT authentication, CRUD operations, entry categorization (Personal/Work/Travel), and period-based summary views.</p>
+          <div class="project-tags">
+            <span class="project-tag">React Native</span><span class="project-tag">TypeScript</span>
+            <span class="project-tag">Express.js</span><span class="project-tag">PostgreSQL</span>
+          </div>
+        </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingImpactUSIU">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseImpactUSIU" aria-expanded="false" aria-controls="collapseImpactUSIU">
-                                        Social Impact
-                                    </button>
-                                </h2>
-                                <div id="collapseImpactUSIU" class="accordion-collapse collapse" aria-labelledby="headingImpactUSIU" data-bs-parent="#usiuMapAccordion">
-                                    <div class="accordion-body">
-                                        Designed to improve accessibility and orientation for over 7,000 students and staff at USIU-Africa. The system supports inclusive navigation across campus and has enhanced mobility for students with disabilities and new students unfamiliar with the campus layout.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </div>
 
-            <h2 class="text-center mb-4">Minor Projects</h2>
-            <div class="row">
-                <!-- Sentiment Analysis Web App -->
-                <div class="col-md-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h3 class="card-title">Sentiment Analysis Web App</h3>
-                            <p class="card-text">
-                                <strong>Overview:</strong> The Sentiment Analysis Web App allows users to input text and get a sentiment analysis of the messages. It classifies messages as positive, negative, or neutral, providing a score for each message.
-                            </p>
+  <!-- ── MODALS ── -->
 
-                            <!-- Button to trigger modal -->
-                            <button type="button" class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#screenshotModal">
-                                View Web App Screenshot
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="screenshotModalLabel">Sentiment Analysis Web App Screenshot</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="./assets/images/sentiment-analysis.png" alt="Sentiment Analysis Web App Screenshot" class="img-fluid" />
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+  <!-- NAVI Modal -->
+  <div class="modal-overlay" id="modal-navi">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">NAVI — Vision Restored</div>
+        <button class="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+        <p><strong style="color:var(--text-primary);">Overview:</strong> NAVI is an AI-powered wearable and mobile solution created for the Microsoft Imagine Cup & Datathon 2024. It empowers blind and visually impaired individuals in Kenya through real-time object recognition, scene narration, and natural language interaction using Microsoft Azure Cognitive Services.</p>
+        <p><strong style="color:var(--gold);">✓ Successfully passed Stage 1 of the Microsoft Imagine Cup 2024.</strong></p>
+        <h5>Features</h5>
+        <ul>
+          <li><strong>Real-Time Object Recognition</strong> — Azure AI Vision detects everyday items in the user's environment</li>
+          <li><strong>Scene Understanding</strong> — Narrates full scenes using Computer Vision APIs for spatial awareness</li>
+          <li><strong>Text-to-Speech</strong> — Reads signs, books, and objects aloud with natural voice options</li>
+          <li><strong>Speech-to-Text</strong> — Converts user voice commands into text for hands-free control</li>
+          <li><strong>10-Language NLP</strong> — Custom datasets for 10 African languages including Swahili and English</li>
+        </ul>
+        <h5 style="margin-top:1.25rem;">Social Impact</h5>
+        <p>Designed to assist 800,000+ visually impaired individuals aged 15–35 in Kenya. Co-designed with blind students at USIU-Africa to ensure real-world usability.</p>
+        <h5 style="margin-top:1.25rem;">Tech Stack</h5>
+        <div style="display:flex; flex-wrap:wrap; gap:.4rem;">
+          <span class="project-tag">Android Java</span><span class="project-tag">XML</span>
+          <span class="project-tag">Microsoft Azure AI Vision</span><span class="project-tag">Azure Speech Services</span>
+          <span class="project-tag">NLP</span><span class="project-tag">Web API Integration</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                            <a href="https://sentiment-analyzer-swle.onrender.com/" target="_blank">
-                                <button type="button" class="btn btn-secondary mt-1">
-                                    View Deployed Site
-                                </button>
-                            </a>                            
+  <!-- LUMEA Modal -->
+  <div class="modal-overlay" id="modal-lumea">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">LUMEA — Booking & Payment System</div>
+        <button class="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+        <p><strong style="color:var(--text-primary);">Overview:</strong> LUMEA is an end-to-end booking and M-Pesa payment platform currently in active development at Quantra Core Limited. Built with a Flutter mobile frontend and Cloudflare Workers serverless backend.</p>
+        <h5>Key Features</h5>
+        <ul>
+          <li>Flutter mobile UI with smooth booking flow and real-time state management</li>
+          <li>M-Pesa STK Push integration for frictionless mobile payments</li>
+          <li>Firebase Auth with secure Firestore rules for user data protection</li>
+          <li>Cloudflare Worker REST APIs — edge-deployed for low latency</li>
+          <li>Full production documentation and deployment strategy</li>
+        </ul>
+        <h5 style="margin-top:1.25rem;">Tech Stack</h5>
+        <div style="display:flex; flex-wrap:wrap; gap:.4rem;">
+          <span class="project-tag">Flutter</span><span class="project-tag">Dart</span>
+          <span class="project-tag">Cloudflare Workers</span><span class="project-tag">Firebase Auth</span>
+          <span class="project-tag">Firestore</span><span class="project-tag">M-Pesa API</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                            <!-- Project Details Accordion for Sentiment Analysis -->
-                            <div class="accordion mt-4" id="sentimentAccordion">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFeaturesSentiment">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFeaturesSentiment" aria-expanded="true" aria-controls="collapseFeaturesSentiment">
-                                            Project Features
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFeaturesSentiment" class="accordion-collapse collapse show" aria-labelledby="headingFeaturesSentiment" data-bs-parent="#sentimentAccordion">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li><strong>Text Sentiment Analysis:</strong> Classifies text messages into positive, negative, or neutral sentiments.</li>
-                                                <li><strong>Real-time Processing:</strong> Provides instant feedback as soon as the user submits the input.</li>
-                                                <li><strong>Statistics:</strong> Displays overall sentiment statistics (positive, neutral, negative) for all messages.</li>
-                                                <li><strong>Rate Limiting:</strong> Prevents spamming by limiting the number of requests from each user.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+  <!-- USIU Modal -->
+  <div class="modal-overlay" id="modal-usiu">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">USIU-Africa AI Map System</div>
+        <button class="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+        <p>An AI-powered interactive campus map for USIU-Africa assisting students, visitors, and staff with on-campus navigation.</p>
+        <h5>Features</h5>
+        <ul>
+          <li>Interactive campus map with real-time building and landmark locations</li>
+          <li>Accessibility routing optimized for wheelchair users and visually impaired individuals</li>
+          <li>Searchable directory for departments, services, and events</li>
+        </ul>
+        <h5 style="margin-top:1.25rem;">Impact</h5>
+        <p>Designed to improve accessibility for 7,000+ students and staff at USIU-Africa. Plans are underway for actual university implementation.</p>
+        <h5 style="margin-top:1.25rem;">Tech Stack</h5>
+        <div style="display:flex; flex-wrap:wrap; gap:.4rem;">
+          <span class="project-tag">Android Java</span><span class="project-tag">XML</span>
+          <span class="project-tag">SQLite</span><span class="project-tag">Firebase</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingUISentiment">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUISentiment" aria-expanded="false" aria-controls="collapseUISentiment">
-                                            User Interface
-                                        </button>
-                                    </h2>
-                                    <div id="collapseUISentiment" class="accordion-collapse collapse" aria-labelledby="headingUISentiment" data-bs-parent="#sentimentAccordion">
-                                        <div class="accordion-body">
-                                            The interface is designed to be clean and simple, with a focus on ease of use. Users can enter multiple messages, analyze them, and view the results instantly.
-                                        </div>
-                                    </div>
-                                </div>
+  <!-- Sentiment Modal -->
+  <div class="modal-overlay" id="modal-sentiment">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">Sentiment Analysis Web App</div>
+        <button class="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+        <p>Classifies user-submitted text as positive, negative, or neutral with real-time scoring and statistics.</p>
+        <h5>Features</h5>
+        <ul>
+          <li>Real-time NLP processing with TextBlob polarity scoring</li>
+          <li>Aggregate statistics dashboard (positive/neutral/negative breakdown)</li>
+          <li>Rate limiting to prevent spam</li>
+          <li>Clean, minimal UI with instant feedback</li>
+        </ul>
+        <h5 style="margin-top:1.25rem;">Backend</h5>
+        <p>Powered by Flask and TextBlob. The API limits the rate of requests to ensure fairness for all users.</p>
+        <div style="margin-top:1.25rem;">
+          <a href="https://sentiment-analyzer-swle.onrender.com/" target="_blank" class="btn btn-gold">View Live Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingBackendSentiment">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBackendSentiment" aria-expanded="false" aria-controls="collapseBackendSentiment">
-                                            Backend Service
-                                        </button>
-                                    </h2>
-                                    <div id="collapseBackendSentiment" class="accordion-collapse collapse" aria-labelledby="headingBackendSentiment" data-bs-parent="#sentimentAccordion">
-                                        <div class="accordion-body">
-                                            The backend is powered by Flask and uses TextBlob for sentiment analysis. The API limits the rate of requests to ensure fairness for all users.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Journal Modal -->
+  <div class="modal-overlay" id="modal-journal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">Personal Journaling App</div>
+        <button class="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+        <p>A mobile journaling app for securely documenting thoughts and experiences, built with React Native and TypeScript.</p>
+        <h5>Features</h5>
+        <ul>
+          <li>Secure user authentication with JWT</li>
+          <li>CRUD operations for journal entries (title, content, category, date)</li>
+          <li>Entry categorization: Personal, Work, Travel</li>
+          <li>Period-based summary views (daily, weekly, monthly) for reflective insights</li>
+          <li>Profile settings — update username and password</li>
+        </ul>
+        <h5 style="margin-top:1.25rem;">Tech Stack</h5>
+        <div style="display:flex; flex-wrap:wrap; gap:.4rem;">
+          <span class="project-tag">React Native</span><span class="project-tag">TypeScript</span>
+          <span class="project-tag">Express.js</span><span class="project-tag">PostgreSQL</span>
+          <span class="project-tag">JWT Auth</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                <!-- Personal Journaling App -->
-                <div class="col-md-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h3 class="card-title">Personal Journaling App</h3>
-                            <p class="card-text">
-                                <strong>Overview:</strong> The Personal Journaling App is a mobile application designed to provide users with a platform to document their thoughts and experiences. Built with React Native and TypeScript, this application allows for secure user authentication, comprehensive journal entry management, and insightful data summarization.
-                            </p>
-                            <button type="button" class="btn btn-primary mt-1 mb-4" data-bs-toggle="modal" data-bs-target="#videoModal">
-                                Watch Demo Video
-                            </button>
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a><a href="experience.html">Experience</a>
+      <a href="data_science_and_ai.html">Data Science & AI</a><a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2026 Naim Salim. All rights reserved.</p>
+  </footer>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="videoModalLabel">Personal Journaling App Demo Video</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <iframe width="100%" height="400" src="https://github.com/naim-2/Journal-Frontend/assets/121217709/21d57f27-74a7-4ce7-9e68-29fe4930631e" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Project Details Accordion for Journaling App -->
-                            <div class="accordion" id="journalingAccordion">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFeaturesJournaling">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFeaturesJournaling" aria-expanded="true" aria-controls="collapseFeaturesJournaling">
-                                            Project Features
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFeaturesJournaling" class="accordion-collapse collapse show" aria-labelledby="headingFeaturesJournaling" data-bs-parent="#journalingAccordion">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li><strong>User Authentication:</strong> Users can sign up and log in securely using JWT or session-based authentication.</li>
-                                                <li><strong>Journal Entry Management:</strong> Create, read, update, and delete journal entries with fields for title, content, category, and date.</li>
-                                                <li><strong>Categorization:</strong> Organize entries into categories such as Personal, Work, and Travel for easy navigation.</li>
-                                                <li><strong>Summary View:</strong> Generate summaries of entries over specified periods (daily, weekly, monthly) for reflective insights.</li>
-                                                <li><strong>Settings:</strong> Users can update their usernames and passwords to manage their profiles.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingUIJournaling">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUIJournaling" aria-expanded="false" aria-controls="collapseUIJournaling">
-                                            User Interface
-                                        </button>
-                                    </h2>
-                                    <div id="collapseUIJournaling" class="accordion-collapse collapse" aria-labelledby="headingUIJournaling" data-bs-parent="#journalingAccordion">
-                                        <div class="accordion-body">
-                                            The application features a simple, intuitive design focusing on usability, utilizing pre-designed UI libraries to enhance user experience.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingBackendJournaling">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBackendJournaling" aria-expanded="false" aria-controls="collapseBackendJournaling">
-                                            Backend Service
-                                        </button>
-                                    </h2>
-                                    <div id="collapseBackendJournaling" class="accordion-collapse collapse" aria-labelledby="headingBackendJournaling" data-bs-parent="#journalingAccordion">
-                                        <div class="accordion-body">
-                                            The backend is built using Express.js with TypeScript, providing secure user management and CRUD operations for journal entries.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingDatabase">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDatabase" aria-expanded="false" aria-controls="collapseDatabase">
-                                            Database
-                                        </button>
-                                    </h2>
-                                    <div id="collapseDatabase" class="accordion-collapse collapse" aria-labelledby="headingDatabase" data-bs-parent="#projectDetails">
-                                        <div class="accordion-body">
-                                            Utilizes a relational database (a hosted PostgreSQL) for efficient data management.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingDeliverables">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDeliverables" aria-expanded="false" aria-controls="collapseDeliverables">
-                                            Project Deliverables
-                                        </button>
-                                    </h2>
-                                    <div id="collapseDeliverables" class="accordion-collapse collapse" aria-labelledby="headingDeliverables" data-bs-parent="#projectDetails">
-                                        <div class="accordion-body">
-                                            <p>GitHub repositories containing the code for both the mobile app and backend hosted service on render, along with comprehensive documentation:</p>
-                                            <ul>
-                                                <li><a href="https://github.com/naim-2/Journal-Frontend" target="_blank">Frontend GitHub Repository</a></li>
-                                                <li><a href="https://github.com/naim-2/Journal-Backend" target="_blank">Backend GitHub Repository</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>                                
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTimeline">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTimeline" aria-expanded="false" aria-controls="collapseTimeline">
-                                            Development Timeline
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTimeline" class="accordion-collapse collapse" aria-labelledby="headingTimeline" data-bs-parent="#projectDetails">
-                                        <div class="accordion-body">
-                                            The project was structured over a week, focusing on setting up the application, implementing features, testing, and documentation.
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-md-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h3 class="card-title">More Projects are Coming</h3>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-    </main>
-
-    <footer class="text-center py-4 bg-light mt-auto">
-        <p>&copy; 2025 Naim. All rights reserved.</p>
-    </footer>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
