@@ -69,6 +69,12 @@
           </div>
           <h3 class="project-title">LUMEA Booking System</h3>
           <p class="project-desc">End-to-end booking and M-Pesa payment platform. Flutter mobile UI + Cloudflare Workers APIs + Firebase Auth and Firestore security rules — full production architecture.</p>
+          <div style="margin-bottom:1rem;">
+            <a href="https://lumea.africa/" target="_blank"
+              class="btn btn-outline" style="font-size:.75rem; padding:.35rem .9rem;" onclick="event.stopPropagation()">
+              🌐 Web App
+            </a>
+          </div>
           <div class="project-tags">
             <span class="project-tag">Flutter</span><span class="project-tag">Dart</span>
             <span class="project-tag">Cloudflare Workers</span><span class="project-tag">Firebase</span>
@@ -90,6 +96,78 @@
           <div class="project-tags">
             <span class="project-tag">Android Java</span><span class="project-tag">SQLite</span>
             <span class="project-tag">Firebase</span><span class="project-tag">AI Routing</span>
+          </div>
+        </div>
+
+        <!-- Interior Design -->
+        <div class="card project-card reveal reveal-delay-2" data-modal="modal-interior">
+          <div class="project-card-top">
+            <span class="project-type">Vue · CMS · Web</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Interior Design CMS Platform</h3>
+          <p class="project-desc">
+            Luxury portfolio website with built-in CMS dashboard. Vue 3 + Firebase + Google Drive media system with smart fallback handling.
+          </p>
+          <div style="margin-bottom:1rem;">
+            <a href="https://interior-design-966.onrender.com/" target="_blank"
+              class="btn btn-outline" style="font-size:.75rem; padding:.35rem .9rem;" onclick="event.stopPropagation()">
+              🌐 Live Site
+            </a>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Vue 3</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">Vite</span>
+            <span class="project-tag">Render</span>
+          </div>
+        </div>
+
+        <!-- APEX Motors -->
+        <div class="card project-card reveal reveal-delay-3" data-modal="modal-apex">
+          <div class="project-card-top">
+            <span class="project-type">Full Stack · Web App</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">APEX Motors Dealership</h3>
+          <p class="project-desc">
+            Full-stack car dealership platform with inventory system, admin dashboard, and Firebase backend.
+          </p>
+          <div style="margin-bottom:1rem;">
+            <a href="https://car-dealership-254.onrender.com/" target="_blank"
+              class="btn btn-outline" style="font-size:.75rem; padding:.35rem .9rem;" onclick="event.stopPropagation()">
+              🚗 View Site
+            </a>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Vue 3</span>
+            <span class="project-tag">Pinia</span>
+            <span class="project-tag">Firestore</span>
+            <span class="project-tag">Auth</span>
+          </div>
+        </div>
+
+        <!-- Nexus Dashboard -->
+        <div class="card project-card reveal reveal-delay-4" data-modal="modal-nexus">
+          <div class="project-card-top">
+            <span class="project-type">Dashboard · SaaS</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Nexus Business Dashboard</h3>
+          <p class="project-desc">
+            Real-time analytics dashboard with client/project tracking, charts, authentication, and theme system.
+          </p>
+          <div style="margin-bottom:1rem;">
+            <a href="https://nexus-dashboard-254.onrender.com/login" target="_blank"
+              class="btn btn-outline" style="font-size:.75rem; padding:.35rem .9rem;" onclick="event.stopPropagation()">
+              📊 Open Dashboard
+            </a>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Vue 3</span>
+            <span class="project-tag">Chart.js</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">Pinia</span>
           </div>
         </div>
       </div>
@@ -222,6 +300,153 @@
           <span class="project-tag">Android Java</span><span class="project-tag">XML</span>
           <span class="project-tag">SQLite</span><span class="project-tag">Firebase</span>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-interior">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">Interior Design CMS Platform</div>
+        <button class="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+
+        <p><strong style="color:var(--text-primary);">Overview:</strong>
+        A luxury interior design portfolio platform with a fully integrated CMS dashboard. Built using Vue 3 and Firebase, the system allows non-technical users to manage projects, services, testimonials, and media content in real time.</p>
+
+        <h5>Core Features</h5>
+        <ul>
+          <li><strong>In-App CMS Dashboard</strong> — Manage portfolio, services, testimonials, and settings without touching code</li>
+          <li><strong>Google Drive Media Engine</strong> — Converts share links into optimized image URLs with automatic fallback handling</li>
+          <li><strong>Smart Image Component</strong> — Shimmer loading + SVG fallback for broken or missing images</li>
+          <li><strong>Authentication System</strong> — Secure admin-only access via Firebase Auth</li>
+          <li><strong>Contact System</strong> — Client inquiries stored directly in Firestore</li>
+        </ul>
+
+        <h5 style="margin-top:1.25rem;">System Architecture</h5>
+        <ul>
+          <li>Vue 3 SPA (Composition API + Vite)</li>
+          <li>Firebase Firestore for real-time content storage</li>
+          <li>Firebase Auth for admin authentication</li>
+          <li>Render.com static deployment with SPA routing</li>
+        </ul>
+
+        <h5 style="margin-top:1.25rem;">Design Focus</h5>
+        <p>Built for high-end interior brands, emphasizing visual elegance, performance, and ease of content management without requiring technical expertise.</p>
+
+        <div style="margin-top:1.25rem;">
+          <a href="https://interior-design-966.onrender.com/" target="_blank" class="btn btn-gold">View Live Website</a>
+        </div>
+
+        <h5 style="margin-top:1.25rem;">Tech Stack</h5>
+        <div style="display:flex; flex-wrap:wrap; gap:.4rem;">
+          <span class="project-tag">Vue 3</span>
+          <span class="project-tag">Pinia</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">Firestore</span>
+          <span class="project-tag">Google Drive API</span>
+          <span class="project-tag">Render</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-apex">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">APEX Motors Dealership Platform</div>
+        <button class="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+
+        <p><strong style="color:var(--text-primary);">Overview:</strong>
+        A full-stack car dealership web application featuring a public showroom and a secure admin dashboard. Designed to simulate a real-world automotive marketplace with inventory management and dynamic filtering.</p>
+
+        <h5>Core Features</h5>
+        <ul>
+          <li><strong>Dynamic Inventory System</strong> — Add, edit, delete vehicles via admin dashboard</li>
+          <li><strong>Advanced Filtering</strong> — Search by brand, price, fuel type, and tags</li>
+          <li><strong>Car Detail Pages</strong> — Image galleries, specs, and descriptions</li>
+          <li><strong>Admin Dashboard</strong> — Full CRUD operations with authentication protection</li>
+          <li><strong>Seed Data Engine</strong> — Preloads realistic vehicle data for demo/testing</li>
+        </ul>
+
+        <h5 style="margin-top:1.25rem;">Architecture</h5>
+        <ul>
+          <li>Vue 3 SPA with modular component architecture</li>
+          <li>Pinia for centralized state management</li>
+          <li>Firebase Firestore for real-time database</li>
+          <li>Firebase Auth for secure admin access</li>
+        </ul>
+
+        <h5 style="margin-top:1.25rem;">Use Case</h5>
+        <p>Demonstrates a scalable dealership system suitable for small-to-medium automotive businesses transitioning to digital platforms.</p>
+
+        <div style="margin-top:1.25rem;">
+          <a href="https://car-dealership-254.onrender.com/" target="_blank" class="btn btn-gold">Visit Dealership</a>
+        </div>
+
+        <h5 style="margin-top:1.25rem;">Tech Stack</h5>
+        <div style="display:flex; flex-wrap:wrap; gap:.4rem;">
+          <span class="project-tag">Vue 3</span>
+          <span class="project-tag">Pinia</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">Firestore</span>
+          <span class="project-tag">Vite</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-nexus">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">Nexus Business Dashboard</div>
+        <button class="modal-close">✕</button>
+      </div>
+      <div class="modal-body">
+
+        <p><strong style="color:var(--text-primary);">Overview:</strong>
+        A real-time business management dashboard designed for tracking clients, projects, and revenue analytics. Built as a SaaS-style application using Vue 3 and Firebase.</p>
+
+        <h5>Core Features</h5>
+        <ul>
+          <li><strong>Client Management System</strong> — Store and manage detailed client records</li>
+          <li><strong>Project Tracking</strong> — Status tracking (pending, in-progress, completed)</li>
+          <li><strong>Analytics Dashboard</strong> — Revenue charts and KPI cards powered by Chart.js</li>
+          <li><strong>Real-Time Sync</strong> — Firestore onSnapshot listeners for instant updates</li>
+          <li><strong>Authentication & Access Control</strong> — Secure login system</li>
+          <li><strong>Theme Engine</strong> — Light/Dark mode with persistent user preference</li>
+        </ul>
+
+        <h5 style="margin-top:1.25rem;">Architecture</h5>
+        <ul>
+          <li>Vue 3 SPA with modular component system</li>
+          <li>Pinia stores for global state management</li>
+          <li>Firebase Firestore (real-time database)</li>
+          <li>Firebase Authentication</li>
+          <li>Chart.js for analytics visualisation</li>
+        </ul>
+
+        <h5 style="margin-top:1.25rem;">Purpose</h5>
+        <p>Designed as a scalable internal business tool or SaaS foundation for agencies managing multiple clients and projects.</p>
+
+        <div style="margin-top:1.25rem;">
+          <a href="https://nexus-dashboard-254.onrender.com/login" target="_blank" class="btn btn-gold">Open Dashboard</a>
+        </div>
+
+        <h5 style="margin-top:1.25rem;">Tech Stack</h5>
+        <div style="display:flex; flex-wrap:wrap; gap:.4rem;">
+          <span class="project-tag">Vue 3</span>
+          <span class="project-tag">Pinia</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">Chart.js</span>
+          <span class="project-tag">Vite</span>
+        </div>
+
       </div>
     </div>
   </div>
