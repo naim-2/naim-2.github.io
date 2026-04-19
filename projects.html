@@ -61,6 +61,39 @@
           </div>
         </div>
 
+        <!-- FERNWEH -->
+        <div class="card project-card reveal reveal-delay-1" data-modal="modal-fernweh">
+          <div class="project-card-top">
+            <span class="project-type">Full Stack · Travel Platform</span>
+            <span class="project-arrow">↗</span>
+          </div>
+
+          <h3 class="project-title">Fernweh Travel Platform</h3>
+
+          <p class="project-desc">
+            Production-ready tour booking platform with public booking flow and admin dashboard. 
+            Built with Vue 3, Pinia, and Firebase, featuring authentication, Firestore database, 
+            and a mock fallback system for demo resilience.
+          </p>
+
+          <div style="margin-bottom:1rem;">
+            <a href="https://fernweh-travel-254.onrender.com/" target="_blank"
+              class="btn btn-outline" style="font-size:.75rem; padding:.35rem .9rem;"
+              onclick="event.stopPropagation()">
+              🌍 Live App
+            </a>
+          </div>
+
+          <div class="project-tags">
+            <span class="project-tag">Vue 3</span>
+            <span class="project-tag">Pinia</span>
+            <span class="project-tag">Vue Router</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">Firestore</span>
+            <span class="project-tag">Auth</span>
+          </div>
+        </div>
+
         <!-- LUMEA -->
         <div class="card project-card reveal reveal-delay-1" data-modal="modal-lumea">
           <div class="project-card-top">
@@ -444,6 +477,77 @@
           <span class="project-tag">Pinia</span>
           <span class="project-tag">Firebase</span>
           <span class="project-tag">Chart.js</span>
+          <span class="project-tag">Vite</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FERNWEH MODAL -->
+  <div class="modal-overlay" id="modal-fernweh">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">Fernweh Travel Platform</div>
+        <button class="modal-close">✕</button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>
+          <strong style="color:var(--text-primary);">Overview:</strong>
+          Fernweh is a full-stack travel booking web application featuring a public-facing 
+          tour marketplace and a protected admin dashboard. It supports real-time bookings, 
+          authentication, and scalable Firestore-backed data architecture.
+        </p>
+
+        <h5>Key Features</h5>
+        <ul>
+          <li><strong>Full Booking Flow</strong> — Multi-step booking form with validation</li>
+          <li><strong>Admin Dashboard</strong> — Manage tours and bookings (CRUD operations)</li>
+          <li><strong>Authentication</strong> — Firebase Auth with protected admin routes</li>
+          <li><strong>Real-Time Database</strong> — Firestore integration for tours & bookings</li>
+          <li><strong>Mock Fallback System</strong> — Runs fully without backend setup</li>
+          <li><strong>Reusable Components</strong> — Modular Vue 3 Composition API architecture</li>
+        </ul>
+
+        <h5 style="margin-top:1.25rem;">Architecture Highlights</h5>
+        <ul>
+          <li>Pinia stores for centralized state management</li>
+          <li>Vue Router with route guards for admin protection</li>
+          <li>Separation of concerns (views, components, stores, composables)</li>
+          <li>Global notification system using composables</li>
+          <li>Scalable Firestore schema design</li>
+        </ul>
+
+        <h5 style="margin-top:1.25rem;">System Design</h5>
+        <ul>
+          <li><strong>Frontend:</strong> Vue 3 (Composition API) + Vite</li>
+          <li><strong>State:</strong> Pinia</li>
+          <li><strong>Backend:</strong> Firebase (Firestore, Auth, Storage)</li>
+          <li><strong>Routing:</strong> Vue Router (with guards)</li>
+        </ul>
+
+        <h5 style="margin-top:1.25rem;">Use Case</h5>
+        <p>
+          Designed as a scalable foundation for travel agencies to manage tour packages, 
+          bookings, and customer data through a modern web interface.
+        </p>
+
+        <div style="margin-top:1.25rem;">
+          <a href="https://fernweh-travel-254.onrender.com/" target="_blank" class="btn btn-gold">
+            Launch Live App
+          </a>
+        </div>
+
+        <h5 style="margin-top:1.25rem;">Tech Stack</h5>
+        <div style="display:flex; flex-wrap:wrap; gap:.4rem;">
+          <span class="project-tag">Vue 3</span>
+          <span class="project-tag">Pinia</span>
+          <span class="project-tag">Vue Router</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">Firestore</span>
+          <span class="project-tag">Auth</span>
           <span class="project-tag">Vite</span>
         </div>
 
